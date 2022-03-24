@@ -1,0 +1,1000 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color: white;
+    --color2: rgba(54, 113, 233, 1);
+    --h1:40px;
+
+}
+
+
+
+@font-face {
+    font-family: Rubik;
+    src: url(/fonts/Rubik/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Loto;
+    src: url(/fonts/Loto/Lato-Black.ttf);
+}
+
+
+img:not(.paymentinners1 img){
+    width: 90%;
+}
+
+
+
+
+body{
+    background: #0D0D2B;
+}
+    
+/* __________________________________ NAV _________________________________ */
+
+.mobilemenu{
+    display: none;
+    z-index: 15;
+}
+.container{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    background-color: #0D0D2B;
+    z-index: 15;
+    
+}
+
+.container1{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container1 :nth-child(1){
+    margin: 3px;
+    text-decoration: none;
+}
+
+.container1 :nth-child(2){
+    margin: 2% 0;
+    text-decoration: none;
+}
+
+.container2{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+i{
+    font-size: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.a1{
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+.inners1{
+    color: white;
+    padding: 4% 14px;
+    margin-left: 1%;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+    font-family: Rubik;
+    
+}
+
+.inners2{
+    color: white;
+    padding: 4% 14px;
+    margin-left: 3%;
+    margin-right: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    font-family: Rubik;
+}
+
+
+
+.button1{
+    background-color: #3671E9;
+    border-radius: 32px;
+    padding: 15px 30px;
+    margin: 35px 5px;
+   
+    
+    
+}
+
+@media(max-width: 1400px){
+    .container{
+        display: none;
+    }
+    .mobilemenu{
+        display: block;
+        position: fixed;
+        width: 100%;
+        background-color: #0D0D2B;
+    }
+    .mobilemenu i{
+        padding: 5px;
+    }
+}
+/* __________________________________ Section 1 _________________________________ */
+
+.container3{
+    width: 100%;
+    display: flex;
+    
+}
+
+.continners{
+    flex-basis: 50%;
+    margin: 10% 10%;
+}
+
+@media(max-width: 1300px){
+    .container3{
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+
+    .continners{
+        flex-basis: 100%;
+    }
+}
+
+
+.continner1{
+    display: flex;
+    align-items: center;
+    width: 61%;
+    color: var(--color);
+    background-color: rgb(255, 255, 255, 0.1);
+    margin: 20px 0px;
+    border-radius: 15px;
+    font-family: Rubik;
+   
+}
+
+
+
+@media(max-width: 1300px){
+    .continner1{
+        display: none;
+        
+    }
+}
+
+.continner2{
+    color: var(--color);
+    font-family: Rubik;
+    font-size: 60px;
+    
+}
+
+.continner3{
+    color: var(--color);
+    font-size: 31px;
+}
+.conp{
+    font-size: 23px;
+    margin: 25px 0;
+}
+
+
+.myb1{ 
+     width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: Rubik;
+  
+}
+
+.btn1{
+    background-color: var(--color2);
+    color: var(--color);
+    font-size: 35px;
+    border-radius: 40px;
+    padding: 20px 29px;
+    margin: 20px 0;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.cirlce{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color);
+    margin-left: 15px;
+
+}
+/* __________________________________ Section 2 _________________________________ */
+
+
+.container4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    
+    
+}
+
+@media(max-width: 1300px){
+    .continner4{
+      
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    .cirlce{
+        display: none;
+    }
+    .continner2{
+        text-align: center;
+    }
+    .continner3{
+        text-align: center;
+    }
+}
+
+.innerdivs{
+    display: flex;
+    justify-content: center;
+    flex-basis: 30%;
+    margin: 30px;
+
+    
+}
+
+.inner1div{
+    margin: -20px 20px;
+}
+
+@media(max-width: 600px){
+    .innerdivs{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+h1, .myh3{
+    font-size: var(--h1);
+    color: var(--color);
+    font-family: Rubik;
+    margin: 20px 0;
+}
+h2{
+    font-size: var(--h1);
+    color: black;
+    /* margin-left: 25px; */
+    font-family: Rubik;
+}
+
+p{
+
+    font-family: Loto;
+    color: rgb(224, 224, 224);
+
+}
+
+h3{
+    font-family: Rubik;
+    color: rgb(202, 193, 219);
+    margin: 0px 3px;
+}
+
+
+
+
+@media(max-width: 800px){
+    .container4{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.container5{
+    width: 100%;
+    display: flex;
+}
+
+.divinners{
+    flex-basis: 50%;
+    margin: 10% 10%;
+}
+
+@media(max-width: 1300px){
+    .container5{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .divinners{
+        flex-basis: 100%;
+    }
+}
+
+.endofsection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.endofsection2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.endofsection3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 40px;
+    
+}
+
+.endofsection4{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.endinner{
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    width: 50%;
+    background-color: white;
+    height: auto;
+    padding: 20px 25px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.endinner1{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+    margin: 4%;
+}
+
+@media(max-width: 470px){
+   .endinner1 ::placeholder, .endinner2 ::placeholder{
+        font-size: 12px;
+    }
+    
+}
+
+.endinner2{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 25%;
+    margin: 4%;
+}
+
+.endinner3{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 25%;
+    margin: 10px;
+}
+
+.input2{
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgb(224, 224, 224);
+    font-size: 22px;
+    width: 100%;
+    padding: 5px 5px;
+    
+    
+}
+@media(max-width: 1250px){
+    .endinner{
+        flex-wrap: wrap;
+        justify-content: center;
+       max-width: 100%;
+    }
+  
+}
+
+
+
+@media(max-width: 1000px){
+    .endinner{
+        width: 100%;
+    }
+}
+
+@media(max-width: 740px){
+    .endofsection{
+        text-align: center;
+    }
+    .endofsection2{
+        text-align: center;
+    }
+    .endofsection3{
+        text-align: center;
+    }
+}
+
+/* __________________________________ Section 3 _________________________________ */
+
+
+.container6-5{
+    background-color: rgb(249, 250, 253);
+    padding-bottom: 80px;
+    
+}
+
+.container6{
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    padding: 20px 25px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px -2px 21px 0px #391777;
+
+}
+
+.myh4{
+    color: rgba(54, 113, 233, 1);
+    font-family: Rubik;
+    padding-left: 2% ;
+}
+
+.entimetedinnersh2{
+    display: flex;
+}
+
+.estimedtedinners{
+    margin: 10px;
+
+}
+
+.myinh2{
+    color: rgba(54, 113, 233, 1);
+    font-family: Rubik;
+   
+}
+
+.myp1{
+    color: rgb(196, 196, 196);
+}
+
+@media(max-width: 1250px){
+    .entimetedinnersh2{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .estimedtedinners{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .myinh2{
+        
+       
+        margin: 2% auto;
+        
+    }
+
+
+}
+
+
+
+
+@media(max-width: 1000px){
+    .cont6inner{
+        width: 100%;
+    }
+    .container6-5{
+        padding-top: 30px;
+    }
+}
+
+.newinner{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-size: 60px;
+    font-family: Rubik;
+    text-align: center;
+    margin: 60px;
+    
+}
+
+@media(max-width: 1200px ){
+    .newinner{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 500px){
+    .newinner{
+        font-size: 20px;
+    }
+}
+
+
+.container7{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: white;
+}
+
+.innerss{
+    width: 100%;
+    flex-basis: 30%;
+    padding: 30px 30px;
+    border-radius: 30px;
+    
+}
+
+.innerss:first-child{
+    background-color: rgb(43, 7, 110);
+}
+
+.btclogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.btcheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btcp{
+    text-align: center;
+    padding: 30px 70px;
+    letter-spacing: 2px;
+}
+
+.btcbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow{
+    border: 1px rgba(43, 7, 110, 0.2) solid;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px){
+    .container7{
+        
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .innerss{
+        margin: 40px;
+        
+    }
+
+    
+}
+
+/* __________________________________ Section 4 _________________________________ */
+
+
+.container8{
+    width: 100%;
+    height: auto;
+    background-color: rgb(43, 7, 110);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.innersss1{
+    width: 100%;
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myin1{
+    
+    font-size: 30px;
+    margin: 20px;
+}
+
+.myin1 :nth-child(2){
+    font-family: Loto;
+
+}
+
+.innersss{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    /* padding: 70px; */
+    
+}
+
+.innersss2{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 50px;
+}
+
+.innersss3{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding: 27px;
+    width: 100%;
+}
+
+@media (max-width: 1300px){
+    .container8{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .innersss{
+        margin: 30px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .btn1{
+        margin: 10% auto;
+    }
+}
+
+.innersss3{
+    display: flex;
+    margin: 2% auto;
+    max-width: 80%;
+    justify-content: space-around;
+    width: 80%;
+    border-radius: 15px;
+    background-color: rgb(54, 113, 233);
+}
+
+.myin2{
+    flex-basis: 50%;
+    margin: 20px;
+    
+}
+
+.inpusubbutton{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}
+
+#my-placeholder1::placeholder{
+    color: white;
+}
+
+@media(max-width: 700px){
+    .inpusubbutton{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.inpusubbutton :first-child{
+    flex-basis: 70%;
+    
+}
+.inpusubbutton :last-child{
+    flex-basis: 30%;
+    
+}
+.input1 {
+    background-color: rgb(54, 113, 233);
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid white;
+    font-size: 22px;
+    padding: 6px 0px;
+    width: 100%;
+    
+}  
+
+.input1::placeholder{
+    color: white;
+}
+
+
+
+.subbutton{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.subbutton1{
+    background-color: white;
+    color: black;
+    font-size: 31px;
+    border-radius: 50px;
+    padding: 12px 16px;
+    cursor: pointer;
+    border: 0px;
+}
+
+@media(max-width: 532px){
+    .inp ::placeholder{
+        font-size: 15px;
+    }
+}
+@media(max-width: 1000px){
+   
+    .innersss3{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .myin2{
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .subbutton{
+        justify-content: center;
+    }
+
+    
+}
+
+/* __________________________________ footer _________________________________ */
+
+.footerconainer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(13, 13, 43);
+    display: flex;
+    padding: 5%;
+}
+.footinners{
+    flex-basis: 20%;
+    gap: 15px;
+}
+
+.myimagefooter{
+    width: 50px;
+    height: 50px;
+}
+
+.myh3footer{
+    margin-top: 10px;
+}
+
+.footerconainer .footinners:first-child{
+    flex-basis: 22%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+
+}
+
+.footerconainer :nth-child(2):not(.paymentinners1){
+    flex-basis: 20%;
+}
+
+.footerconainer :nth-child(3):not(.paymentinners1){
+    flex-basis: 20%;
+}
+
+.footerconainer .footinners:last-child{
+    flex-basis: 33%;
+}
+
+.footerconainer :nth-child(2) p{
+    margin: 30px 5px;
+}
+
+
+.footerconainer :nth-child(3){
+   
+    
+    justify-content: flex-start;
+}
+
+.footerconainer :nth-child(3) p{
+    margin: 30px 5px;
+}
+
+
+
+.footerh1{
+    font-size: 42px;
+}
+
+  
+
+
+.paymentinners{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+/* .paymentinners1{
+    flex-basis: 30%;
+    justify-content: space-around;
+    align-items: center;
+    
+} */
+
+/* .paymentinners1 :first-child{
+    width: 82px;
+    height: 77px;
+    padding: 5px;
+} */
+
+
+
+.lastfooter{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    
+}
+.lastfooterinners1{
+    flex-basis: 50%;
+}
+.lastfooterinners2{
+    flex-basis: 50%;
+}
+
+.lastfooterinners1 {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10%;
+}
+
+.lastfooterinners2{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10%;
+}
+.lastfooteri{
+    padding: 10px 10px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+@media(max-width: 925px){
+
+ .footerconainer{
+     display: block;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ .footinners{
+     display: block;
+     flex-wrap: wrap;
+     flex-basis: 100%;
+     text-align: center;
+     
+     
+ }
+ .footinners h3{
+     text-align: center;
+     justify-content: center;
+ }
+
+ .lastfooter{
+     display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .lastfooterinners1{
+     justify-content: center;
+     width: 100%;
+ }
+ .lastfooterinners2{
+     justify-content: center;
+     width: 100%;
+ }
+
+
+
+/* 
+.paymentinners1 :first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.paymentinners{
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+}
+
+.top{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bottom1{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    z-index: 20;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    left: 10px;
+    
+}
